@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Premium Access & Exclusive Content | EarnWeb</title>
+    <meta name="description" content="Get premium membership for exclusive courses, advanced training, and 1-on-1 coaching.">
+    <meta name="keywords" content="membership, premium, exclusive, coaching, training">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">💰 EarnWeb</a>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="guides.html">Guides</a>
+                <a href="tools.html">Tools</a>
+                <a href="membership.html" class="active">Membership</a>
+                <a href="email-course.html">Course</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+                <button class="search-toggle" onclick="toggleSearch()">🔍</button>
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 20px;">
+        <div class="hero-content">
+            <h1>Premium Membership</h1>
+            <p>Get exclusive access to courses, coaching, and an elite community</p>
+            <div style="margin-top: 30px;">
+                <span style="font-size: 2em;">🏆</span>
+                <p style="font-size: 1.1em; margin-top: 10px;">Join 5,000+ premium members achieving their goals</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership-section">
+        <div class="container">
+            <h2>What's Included in Premium</h2>
+
+            <div class="membership-overview">
+                <div class="overview-item">
+                    <span class="overview-icon">🎓</span>
+                    <h3>Advanced Courses</h3>
+                    <p>12 in-depth video courses covering every aspect of making money online</p>
+                </div>
+                <div class="overview-item">
+                    <span class="overview-icon">👨‍🏫</span>
+                    <h3>1-on-1 Coaching</h3>
+                    <p>Monthly private calls with experts. Get personalized guidance on YOUR business</p>
+                </div>
+                <div class="overview-item">
+                    <span class="overview-icon">👥</span>
+                    <h3>Elite Community</h3>
+                    <p>Private Slack with 5,000+ serious entrepreneurs working toward 6-figure incomes</p>
+                </div>
+                <div class="overview-item">
+                    <span class="overview-icon">📚</span>
+                    <h3>Resource Library</h3>
+                    <p>500+ templates, tools, swipe files, and scripts. Ready-to-use in your business</p>
+                </div>
+                <div class="overview-item">
+                    <span class="overview-icon">🎁</span>
+                    <h3>Bonus Resources</h3>
+                    <p>Email sequences, graphics, funnels, landing page templates, and more</p>
+                </div>
+                <div class="overview-item">
+                    <span class="overview-icon">📈</span>
+                    <h3>Weekly Trainings</h3>
+                    <p>Live Q&A sessions and advanced training every week. Ask anything, get answers</p>
+                </div>
+            </div>
+
+            <!-- Membership Tiers -->
+            <h2 style="text-align: center; margin-top: 80px; margin-bottom: 50px;">Choose Your Level</h2>
+            
+            <div class="membership-tiers">
+                <!-- Standard Membership -->
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3>Standard</h3>
+                        <p class="tier-price">$49<span>/month</span></p>
+                    </div>
+                    <ul class="tier-features">
+                        <li>✓ 12 advanced courses</li>
+                        <li>✓ 500+ templates</li>
+                        <li>✓ Private community</li>
+                        <li>✓ Weekly group Q&A</li>
+                        <li>✓ Monthly resources</li>
+                        <li>✗ 1-on-1 coaching</li>
+                        <li>✗ Priority support</li>
+                        <li>✗ Mastermind group</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="alert('Payment processing coming soon')">Get Standard Access</button>
+                    <p class="tier-cta">Most popular choice for serious learners</p>
+                </div>
+
+                <!-- Pro Membership -->
+                <div class="tier-card featured">
+                    <div class="badge">Best Value</div>
+                    <div class="tier-header">
+                        <h3>Pro</h3>
+                        <p class="tier-price">$147<span>/month</span></p>
+                    </div>
+                    <ul class="tier-features">
+                        <li>✓ Everything in Standard</li>
+                        <li>✓ 1 coaching call/month</li>
+                        <li>✓ Priority email support</li>
+                        <li>✓ Exclusive deals access</li>
+                        <li>✓ Beta features first</li>
+                        <li>✓ Content calendar</li>
+                        <li>✓ Personal optimization call</li>
+                        <li>✗ Mastermind group</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="alert('Payment processing coming soon')">Get Pro Access</button>
+                    <p class="tier-cta">For entrepreneurs serious about scaling</p>
+                </div>
+
+                <!-- Elite Membership -->
+                <div class="tier-card">
+                    <div class="badge elite">Elite</div>
+                    <div class="tier-header">
+                        <h3>Elite</h3>
+                        <p class="tier-price">$497<span>/month</span></p>
+                    </div>
+                    <ul class="tier-features">
+                        <li>✓ Everything in Pro</li>
+                        <li>✓ 4 coaching calls/month</li>
+                        <li>✓ 24/7 VIP support</li>
+                        <li>✓ Private mastermind group</li>
+                        <li>✓ Custom strategy session</li>
+                        <li>✓ Exclusive networking events</li>
+                        <li>✓ Business consulting</li>
+                        <li>✓ Done-with-you services</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="alert('Payment processing coming soon')">Get Elite Access</button>
+                    <p class="tier-cta">For 6-figure creators and businesses</p>
+                </div>
+            </div>
+
+            <!-- Member Benefits -->
+            <div class="member-benefits">
+                <h2>Member Exclusive Benefits</h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h4>📊 Access to Advanced Analytics</h4>
+                        <p>Learn to track and optimize your metrics like the pros. Includes video tutorials and template tracking sheets.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>🎯 Content Strategy Masterclass</h4>
+                        <p>12-part series on creating content that ranks, converts, and builds authority in your niche.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>💎 Premium Tools Access</h4>
+                        <p>Discounted or free access to premium software: SEO tools, email platforms, design software, and more.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>🤝 Networking Opportunities</h4>
+                        <p>Monthly virtual meetups with other successful entrepreneurs. Collaborate, partner, and grow together.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>🚀 Growth Accelerator Program</h4>
+                        <p>Proven 90-day system to go from 0 to 10k monthly visitors and establish authority.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>📞 Expert Interviews</h4>
+                        <p>Monthly Q&A with 6-figure earners in different niches. Learn their secrets and strategies.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>🎁 Bonus Swipe Files</h4>
+                        <p>Copy-and-paste email sequences, sales pages, ads, and landing pages that convert.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>🏆 Success Stories & Case Studies</h4>
+                        <p>Deep dives into how real members went from struggling to earning 5-6 figures.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>🎓 Certification Program</h4>
+                        <p>Earn completion certificates for courses. Build credibility and authority in your niche.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member Testimonials -->
+            <div class="member-testimonials">
+                <h2>What Our Members Say</h2>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-item">
+                        <div class="stars">★★★★★</div>
+                        <p>"The coaching calls alone are worth the membership cost. My business went from $1k to $5k/month in 3 months after implementing the Pro strategies."</p>
+                        <p class="testimonial-author">— David M., Pro Member</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="stars">★★★★★</div>
+                        <p>"The community is incredible. I've made genuine friendships and business partnerships that are generating income. Best investment ever."</p>
+                        <p class="testimonial-author">— Sarah T., Standard Member</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="stars">★★★★★</div>
+                        <p>"My coach helped me identify why I was stuck at $3k/month and gave me a clear roadmap to 6 figures. Worth every penny."</p>
+                        <p class="testimonial-author">— Jennifer R., Elite Member</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="stars">★★★★★</div>
+                        <p>"The templates saved me literally 100+ hours of work. I went from 10 blog articles to 50 in 2 months using the frameworks provided."</p>
+                        <p class="testimonial-author">— Marcus H., Pro Member</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="stars">★★★★★</div>
+                        <p>"The advanced courses are better than some expensive MBA programs I researched. Clear, practical, and immediately applicable."</p>
+                        <p class="testimonial-author">— Rachel K., Standard Member</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="stars">★★★★★</div>
+                        <p>"Being in the Elite program with other 6-figure earners elevated my thinking. The mastermind alone generates 10x ROI."</p>
+                        <p class="testimonial-author">— Alex T., Elite Member</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="membership-faq">
+                <h2>Membership FAQ</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can I cancel anytime?</span>
+                            <span class="toggle">+</span>
+                        </div>
+                        <div class="faq-answer">Yes! Cancel anytime with one click. No contracts, no questions asked. Your access continues until the end of your billing cycle.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What if I'm not satisfied?</span>
+                            <span class="toggle">+</span>
+                        </div>
+                        <div class="faq-answer">30-day money-back guarantee. Try the membership risk-free. If you don't love it, get a full refund.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can I upgrade or downgrade?</span>
+                            <span class="toggle">+</span>
+                        </div>
+                        <div class="faq-answer">Absolutely! Change your plan anytime. We'll adjust your billing pro-rata. Upgrade to access more features or downgrade to save money.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do I get lifetime access to courses?</span>
+                            <span class="toggle">+</span>
+                        </div>
+                        <div class="faq-answer">Yes! All courses are yours to keep. Even if you cancel, you keep access to all courses you completed as a member.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How do coaching calls work?</span>
+                            <span class="toggle">+</span>
+                        </div>
+                        <div class="faq-answer">Schedule 1:1 calls with our experts via Zoom. Get personalized advice on your business, strategies, and goals. Pro members get 1/month, Elite get 4/month.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final CTA -->
+            <div class="membership-final-cta">
+                <h2>Ready to Accelerate Your Success?</h2>
+                <p>Join thousands of members who are building sustainable income and achieving their financial goals</p>
+                <p style="margin-top: 20px; font-size: 0.95em;">30-Day Money-Back Guarantee • Cancel Anytime • Lifetime Course Access</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" onclick="alert('Choose Standard at $49/month')">Get Standard ($49/mo)</button>
+                    <button class="btn btn-primary btn-large" onclick="alert('Choose Pro at $147/month')">Get Pro ($147/mo)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>EarnWeb</h4>
+                <p>Your guide to earning money online.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" onclick="shareArticle('twitter')">Twitter</a>
+                    <a href="#" onclick="shareArticle('facebook')">Facebook</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EarnWeb. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <style>
+        .membership-section {
+            padding: 80px 20px;
+            background: var(--light-bg);
+        }
+
+        .membership-section > .container > h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 60px;
+            color: var(--text-color);
+        }
+
+        .membership-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .overview-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .overview-icon {
+            font-size: 2.5em;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .overview-item h3 {
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .overview-item p {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .membership-tiers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .tier-card {
+            background: white;
+            border-radius: 10px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+        .tier-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+        }
+
+        .tier-card.featured {
+            border-color: #667eea;
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #f5f7fa 0%, #fff 100%);
+        }
+
+        .tier-card .badge {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .tier-card .badge.elite {
+            background: #764ba2;
+        }
+
+        .tier-header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .tier-header h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .tier-price {
+            font-size: 2.5em;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .tier-price span {
+            font-size: 0.6em;
+            color: var(--text-color);
+        }
+
+        .tier-features {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .tier-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            color: var(--text-color);
+        }
+
+        .tier-features li:last-child {
+            border-bottom: none;
+        }
+
+        .tier-cta {
+            font-size: 0.9em;
+            color: #667eea;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .member-benefits {
+            margin-top: 80px;
+            padding-top: 50px;
+            border-top: 2px solid #eee;
+        }
+
+        .member-benefits h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: var(--text-color);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .benefit-item h4 {
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .benefit-item p {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .member-testimonials {
+            margin-top: 80px;
+            padding-top: 50px;
+            border-top: 2px solid #eee;
+        }
+
+        .member-testimonials h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: var(--text-color);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .testimonial-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border-top: 3px solid #667eea;
+        }
+
+        .stars {
+            color: #ffc107;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .testimonial-item p {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .membership-faq {
+            margin-top: 80px;
+            padding-top: 50px;
+            border-top: 2px solid #eee;
+        }
+
+        .membership-final-cta {
+            text-align: center;
+            margin-top: 80px;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            color: white;
+        }
+
+        .membership-final-cta h2 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .membership-final-cta > p:first-of-type {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .cta-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .btn-large {
+            padding: 15px 40px;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            .membership-tiers {
+                grid-template-columns: 1fr;
+            }
+
+            .tier-card.featured {
+                transform: scale(1);
+            }
+        }
+
+        body.dark-mode .tier-card,
+        body.dark-mode .benefit-item,
+        body.dark-mode .testimonial-item {
+            background: #1e1e1e;
+        }
+    </style>
+</body>
+</html>

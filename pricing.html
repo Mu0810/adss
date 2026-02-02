@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Premium Courses & Resources | EarnWeb</title>
+    <meta name="description" content="Affordable pricing for premium courses, templates, and tools to help you earn money online.">
+    <meta name="keywords" content="online courses, pricing, digital products, learning">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">💰 EarnWeb</a>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="guides.html">Guides</a>
+                <a href="tools.html">Tools</a>
+                <a href="resources.html">Resources</a>
+                <a href="pricing.html" class="active">Pricing</a>
+                <a href="tutorials.html">Tutorials</a>
+                <a href="contact.html">Contact</a>
+                <button class="search-toggle" onclick="toggleSearch()">🔍</button>
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 20px;">
+        <div class="hero-content">
+            <h1>Simple, Transparent Pricing</h1>
+            <p>Choose the perfect plan to start earning money online today</p>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2>Our Plans</h2>
+            
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Free Access</h3>
+                        <p class="price">$0<span>/month</span></p>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ All 7 website pages</li>
+                        <li>✓ 6 interactive calculators</li>
+                        <li>✓ 12 step-by-step guides</li>
+                        <li>✓ Resource library</li>
+                        <li>✓ Community access</li>
+                        <li>✗ Premium courses</li>
+                        <li>✗ Private templates</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="alert('You already have access!')">Your Current Plan</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro Plan</h3>
+                        <p class="price">$19<span>/month</span></p>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Everything in Free</li>
+                        <li>✓ 5 Premium courses</li>
+                        <li>✓ Video tutorials library</li>
+                        <li>✓ Customizable templates</li>
+                        <li>✓ Monthly webinars</li>
+                        <li>✓ Priority email support</li>
+                        <li>✗ 1-on-1 coaching</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="alert('Coming soon! Stripe integration needed')">Get Started</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <div class="badge elite">Elite</div>
+                    <div class="pricing-header">
+                        <h3>Premium Plan</h3>
+                        <p class="price">$49<span>/month</span></p>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Everything in Pro</li>
+                        <li>✓ 1-on-1 coaching calls</li>
+                        <li>✓ Private Slack community</li>
+                        <li>✓ Advanced SEO toolkit</li>
+                        <li>✓ Content calendar template</li>
+                        <li>✓ 24/7 priority support</li>
+                        <li>✓ Personal growth roadmap</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="alert('Coming soon! Stripe integration needed')">Upgrade Now</button>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="comparison-section">
+                <h2>Detailed Feature Comparison</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Free</th>
+                            <th>Pro</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Calculators & Tools</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Blog & Guides</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Premium Courses</td>
+                            <td>✗</td>
+                            <td>5 courses</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Video Tutorials</td>
+                            <td>✗</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Templates</td>
+                            <td>✗</td>
+                            <td>Basic</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Community Access</td>
+                            <td>Public</td>
+                            <td>Members only</td>
+                            <td>Private elite</td>
+                        </tr>
+                        <tr>
+                            <td>Support</td>
+                            <td>Email (48h)</td>
+                            <td>Email (24h)</td>
+                            <td>24/7 Priority</td>
+                        </tr>
+                        <tr>
+                            <td>1-on-1 Coaching</td>
+                            <td>✗</td>
+                            <td>✗</td>
+                            <td>✓ Monthly</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- FAQ -->
+            <div class="pricing-faq">
+                <h2>Pricing FAQ</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can I cancel anytime?</span>
+                            <span class="toggle">+</span>
+                        </div>
+                        <div class="faq-answer">Yes, you can cancel your subscription anytime with no penalties. Your access will continue until the end of your billing period.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you offer refunds?</span>
+                            <span class="toggle">+</span>
+                        </div>
+                        <div class="faq-answer">Yes! 30-day money-back guarantee if you're not satisfied with your plan.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can I upgrade or downgrade?</span>
+                            <span class="toggle">+</span>
+                        </div>
+                        <div class="faq-answer">Absolutely! Change your plan anytime. We'll pro-rate any differences in your next billing cycle.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What payment methods do you accept?</span>
+                            <span class="toggle">+</span>
+                        </div>
+                        <div class="faq-answer">We accept all major credit cards (Visa, Mastercard, Amex), PayPal, and cryptocurrency.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="pricing-cta">
+                <h2>Ready to Start Earning?</h2>
+                <p>Join thousands of people building passive income streams</p>
+                <button class="btn btn-primary btn-large" onclick="alert('Coming soon!')">Start Your Free Trial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>EarnWeb</h4>
+                <p>Your guide to earning money online.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" onclick="shareArticle('twitter')">Twitter</a>
+                    <a href="#" onclick="shareArticle('facebook')">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EarnWeb. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <style>
+        .pricing-section {
+            padding: 80px 20px;
+            background: var(--light-bg);
+        }
+
+        .pricing-section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: var(--text-color);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 10px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+        }
+
+        .pricing-card.featured {
+            border-color: #667eea;
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #f5f7fa 0%, #fff 100%);
+        }
+
+        .pricing-card .badge {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .pricing-card .badge.elite {
+            background: #764ba2;
+        }
+
+        .pricing-header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .pricing-header h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .pricing-header .price {
+            font-size: 2.5em;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .pricing-header .price span {
+            font-size: 0.6em;
+            color: var(--text-color);
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .features-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            color: var(--text-color);
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-section {
+            margin-top: 100px;
+            padding-top: 50px;
+            border-top: 2px solid #eee;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: var(--light-bg);
+        }
+
+        .pricing-faq {
+            margin-top: 80px;
+            padding-top: 50px;
+            border-top: 2px solid #eee;
+        }
+
+        .pricing-cta {
+            text-align: center;
+            margin-top: 80px;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            color: white;
+        }
+
+        .pricing-cta h2 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .pricing-cta p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .btn-large {
+            padding: 15px 40px;
+            font-size: 1.1em;
+        }
+
+        body.dark-mode .pricing-card {
+            background: #1e1e1e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</body>
+</html>
