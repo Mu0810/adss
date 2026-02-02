@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Tools Library - EarnWeb</title>
+    <meta name="description" content="Free resources, tools, templates, and case studies to help you start earning money online.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .resources-container {
+            margin: 40px 0;
+        }
+
+        .resource-section {
+            margin-bottom: 4rem;
+        }
+
+        .resource-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 1rem;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .resource-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .resource-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-card p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .resource-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #999;
+            margin-bottom: 1rem;
+        }
+
+        .resource-btn {
+            display: inline-block;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .resource-btn:hover {
+            color: var(--secondary-color);
+        }
+
+        .case-study-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .case-study-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .case-study-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .case-study-content {
+            padding: 1.5rem;
+        }
+
+        .case-study-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-box {
+            background: #f0f4ff;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+
+        .checklist {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .checklist h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+
+        .checklist-item input {
+            margin-right: 1rem;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .checklist-item label {
+            flex: 1;
+            cursor: pointer;
+            color: #333;
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">EarnWeb</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-icons">
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">🌙</button>
+                <button class="search-toggle" onclick="toggleSearch()" title="Search">🔍</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero">
+        <div class="container">
+            <h1>Resources & Tools</h1>
+            <p>Everything you need to start making money online</p>
+        </div>
+    </header>
+
+    <!-- Ad Space -->
+    <div class="ad-space">
+        <div class="container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+                 data-ad-slot="1234567890"
+                 data-ad-format="horizontal"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container resources-container">
+        <!-- Recommended Tools -->
+        <section class="resource-section">
+            <h2>🛠️ Recommended Tools & Platforms</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">🔗</div>
+                    <h3>WordPress</h3>
+                    <p>The most popular platform for blogging and content management. Free and highly customizable.</p>
+                    <div class="resource-meta">
+                        <span>Blogging</span>
+                        <span>Free</span>
+                    </div>
+                    <a href="https://wordpress.org" class="resource-btn" target="_blank">Visit →</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎓</div>
+                    <h3>Udemy</h3>
+                    <p>Create and sell online courses to millions of students. Built-in marketplace and payment system.</p>
+                    <div class="resource-meta">
+                        <span>Courses</span>
+                        <span>50% commission</span>
+                    </div>
+                    <a href="https://udemy.com/teaching" class="resource-btn" target="_blank">Join →</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💼</div>
+                    <h3>Upwork</h3>
+                    <p>Largest freelancing platform. Find clients for writing, design, programming, and more.</p>
+                    <div class="resource-meta">
+                        <span>Freelancing</span>
+                        <span>5-20% fees</span>
+                    </div>
+                    <a href="https://upwork.com" class="resource-btn" target="_blank">Start →</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📝</div>
+                    <h3>Substack</h3>
+                    <p>Start a newsletter and earn from paid subscriptions. Build direct relationships with readers.</p>
+                    <div class="resource-meta">
+                        <span>Newsletter</span>
+                        <span>10% commission</span>
+                    </div>
+                    <a href="https://substack.com" class="resource-btn" target="_blank">Write →</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎥</div>
+                    <h3>YouTube</h3>
+                    <p>Create videos and monetize through ads, sponsorships, and channel memberships.</p>
+                    <div class="resource-meta">
+                        <span>Video</span>
+                        <span>55% revenue share</span>
+                    </div>
+                    <a href="https://youtube.com" class="resource-btn" target="_blank">Start →</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🖼️</div>
+                    <h3>Shutterstock</h3>
+                    <p>Sell photos, videos, and music. Earn passive income from every download.</p>
+                    <div class="resource-meta">
+                        <span>Stock Content</span>
+                        <span>15-40% royalty</span>
+                    </div>
+                    <a href="https://shutterstock.com/submit" class="resource-btn" target="_blank">Submit →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Templates & Checklists -->
+        <section class="resource-section">
+            <h2>📋 Checklists & Templates</h2>
+            
+            <div class="checklist">
+                <h3>✅ Start Your Blog Checklist</h3>
+                <div class="checklist-item">
+                    <input type="checkbox" id="ch1" onchange="savechecklist()">
+                    <label for="ch1">Choose a domain name</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="ch2" onchange="savechecklist()">
+                    <label for="ch2">Set up web hosting</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="ch3" onchange="savechecklist()">
+                    <label for="ch3">Install WordPress</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="ch4" onchange="savechecklist()">
+                    <label for="ch4">Create your first 5 posts</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="ch5" onchange="savechecklist()">
+                    <label for="ch5">Apply for Google AdSense</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="ch6" onchange="savechecklist()">
+                    <label for="ch6">Set up Google Analytics</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="ch7" onchange="savechecklist()">
+                    <label for="ch7">Promote on social media</label>
+                </div>
+            </div>
+
+            <div class="checklist">
+                <h3>✅ Launch Your Course Checklist</h3>
+                <div class="checklist-item">
+                    <input type="checkbox" id="lc1" onchange="savechecklist()">
+                    <label for="lc1">Plan your course outline</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="lc2" onchange="savechecklist()">
+                    <label for="lc2">Record video lessons</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="lc3" onchange="savechecklist()">
+                    <label for="lc3">Create course materials</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="lc4" onchange="savechecklist()">
+                    <label for="lc4">Choose platform (Udemy, Teachable, etc)</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="lc5" onchange="savechecklist()">
+                    <label for="lc5">Set pricing</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="lc6" onchange="savechecklist()">
+                    <label for="lc6">Create promotional videos</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="lc7" onchange="savechecklist()">
+                    <label for="lc7">Launch and market</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies -->
+        <section class="resource-section">
+            <h2>📚 Case Studies</h2>
+            <div class="resources-grid">
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <h3>Sarah's Blog Journey</h3>
+                        <p>From hobby to $5,000/month</p>
+                    </div>
+                    <div class="case-study-content">
+                        <p><strong>Background:</strong> Sarah started a personal finance blog as a hobby with no prior experience.</p>
+                        <div class="case-study-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">18</div>
+                                <div class="stat-label">Months to $5k/mo</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">50k</div>
+                                <div class="stat-label">Monthly Visitors</div>
+                            </div>
+                        </div>
+                        <p><strong>Strategy:</strong> Consistent posting (3x/week), SEO optimization, affiliate marketing, and AdSense. Combined income from all sources.</p>
+                        <a href="#" class="resource-btn">Read Full Story →</a>
+                    </div>
+                </div>
+
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <h3>John's Freelancing Success</h3>
+                        <p>$10,000/month in 2 years</p>
+                    </div>
+                    <div class="case-study-content">
+                        <p><strong>Background:</strong> John learned web development online and started freelancing on Upwork.</p>
+                        <div class="case-study-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">24</div>
+                                <div class="stat-label">Months to $10k/mo</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">$75</div>
+                                <div class="stat-label">Hourly Rate</div>
+                            </div>
+                        </div>
+                        <p><strong>Strategy:</strong> Built strong portfolio, got 5-star reviews, gradually increased rates, then transitioned to retainer clients.</p>
+                        <a href="#" class="resource-btn">Read Full Story →</a>
+                    </div>
+                </div>
+
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <h3>Emma's Course Business</h3>
+                        <p>$8,000/month passive income</p>
+                    </div>
+                    <div class="case-study-content">
+                        <p><strong>Background:</strong> Emma created an online course about digital marketing based on her 5 years of experience.</p>
+                        <div class="case-study-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">3000</div>
+                                <div class="stat-label">Students Enrolled</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">4.8⭐</div>
+                                <div class="stat-label">Course Rating</div>
+                            </div>
+                        </div>
+                        <p><strong>Strategy:</strong> High-quality content, email marketing, affiliate partnerships, and continuous course updates.</p>
+                        <a href="#" class="resource-btn">Read Full Story →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Resources -->
+        <section class="resource-section">
+            <h2>📖 Learning Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📚</div>
+                    <h3>SEO Guide</h3>
+                    <p>Comprehensive guide to search engine optimization and ranking your content on Google.</p>
+                    <a href="#" class="resource-btn">Download PDF →</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💬</div>
+                    <h3>Email Marketing 101</h3>
+                    <p>Learn to build email lists and create campaigns that convert subscribers into customers.</p>
+                    <a href="#" class="resource-btn">Get Guide →</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎯</div>
+                    <h3>Niche Research Template</h3>
+                    <p>Step-by-step template to find profitable niches for your online business.</p>
+                    <a href="#" class="resource-btn">Access Template →</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Free Google Sheets template to track your website traffic and earnings.</p>
+                    <a href="#" class="resource-btn">Get Template →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ad Space -->
+    <div class="ad-space">
+        <div class="container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+                 data-ad-slot="9876543210"
+                 data-ad-format="horizontal"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Join Our Community</h2>
+            <p>Get exclusive resources and success strategies in your inbox</p>
+            <form class="newsletter-form" onsubmit="handleNewsletterSignup(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EarnWeb. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        function savechecklist() {
+            // Save checklist progress to localStorage
+            const checkboxes = document.querySelectorAll('.checklist-item input');
+            const data = {};
+            checkboxes.forEach(cb => {
+                data[cb.id] = cb.checked;
+            });
+            localStorage.setItem('checklist', JSON.stringify(data));
+        }
+
+        // Load checklist progress
+        window.addEventListener('load', () => {
+            const saved = localStorage.getItem('checklist');
+            if (saved) {
+                const data = JSON.parse(saved);
+                Object.keys(data).forEach(key => {
+                    const cb = document.getElementById(key);
+                    if (cb) cb.checked = data[key];
+                });
+            }
+        });
+    </script>
+</body>
+</html>
