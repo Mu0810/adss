@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Design Demo - EarnWeb</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="advanced-styles.css">
+    <style>
+        .demo-section {
+            padding: 80px 0;
+        }
+        
+        .demo-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            font-weight: 800;
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .demo-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.4s ease;
+        }
+        
+        .demo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        .button-showcase {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+        
+        body.dark-mode .demo-card,
+        body.dark-mode .stat-card {
+            background: #2a2a2a;
+        }
+        
+        body.dark-mode .stat-label {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">💰 EarnWeb</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="demo.html" class="active">Demo</a></li>
+            </ul>
+            <div class="navbar-icons">
+                <button class="search-toggle" onclick="toggleSearch()">🔍</button>
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+        <div class="container">
+            <input type="text" placeholder="Search..." id="searchInput">
+            <button onclick="performSearch()">Search</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="scroll-reveal stagger-1">Modern Design Showcase</h1>
+                <p class="scroll-reveal stagger-2">Experience cutting-edge web design with smooth animations</p>
+                <div class="button-showcase scroll-reveal stagger-3">
+                    <a href="#" class="cta-button"><span>Primary Button</span></a>
+                    <a href="#" class="cta-button secondary"><span>Secondary Button</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="scroll-reveal animated-gradient-text">Impressive Statistics</h2>
+            <div class="stats-container">
+                <div class="stat-card scroll-reveal glow-on-hover">
+                    <div class="stat-number counter" data-target="50000">0</div>
+                    <div class="stat-label">Happy Users</div>
+                </div>
+                <div class="stat-card scroll-reveal glow-on-hover">
+                    <div class="stat-number counter" data-target="1000">0</div>
+                    <div class="stat-label">Daily Visitors</div>
+                </div>
+                <div class="stat-card scroll-reveal glow-on-hover">
+                    <div class="stat-number counter" data-target="500">0</div>
+                    <div class="stat-label">Articles Published</div>
+                </div>
+                <div class="stat-card scroll-reveal glow-on-hover">
+                    <div class="stat-number counter" data-target="98">0</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Effects Section -->
+    <section class="demo-section" style="background: var(--light-bg);">
+        <div class="container">
+            <h2 class="scroll-reveal gradient-text">Interactive Cards</h2>
+            <div class="demo-grid">
+                <div class="article-card">
+                    <div class="article-image" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+                    <h3>Gradient Background</h3>
+                    <p>Hover over cards to see smooth animations and hover effects in action.</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </div>
+                <div class="article-card">
+                    <div class="article-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                    <h3>Modern Shadows</h3>
+                    <p>Beautiful box shadows that elevate on hover for a floating effect.</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </div>
+                <div class="article-card">
+                    <div class="article-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                    <h3>Smooth Transitions</h3>
+                    <p>Every interaction feels smooth with cubic-bezier easing functions.</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Cards Section -->
+    <section class="categories scroll-reveal">
+        <div class="container">
+            <h2>Beautiful Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="icon">💰</div>
+                    <h3>Make Money</h3>
+                    <p>Learn proven strategies to earn income online through various methods.</p>
+                </div>
+                <div class="category-card">
+                    <div class="icon">📈</div>
+                    <h3>Grow Business</h3>
+                    <p>Scale your online business with advanced marketing techniques.</p>
+                </div>
+                <div class="category-card">
+                    <div class="icon">🎨</div>
+                    <h3>Design Skills</h3>
+                    <p>Master modern design principles and create stunning visuals.</p>
+                </div>
+                <div class="category-card">
+                    <div class="icon">🚀</div>
+                    <h3>Launch Products</h3>
+                    <p>From idea to launch, learn how to bring products to market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Utility Classes Demo -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="scroll-reveal">Modern UI Elements</h2>
+            <div class="demo-grid">
+                <div class="demo-card glass-card">
+                    <h3>Glass Morphism</h3>
+                    <p>Modern glass effect with backdrop blur for a premium look.</p>
+                    <span class="badge">New</span>
+                </div>
+                <div class="demo-card neuro-card">
+                    <h3>Neumorphism</h3>
+                    <p>Soft UI design with subtle shadows for depth and dimension.</p>
+                    <span class="badge">Trending</span>
+                </div>
+                <div class="demo-card gradient-border">
+                    <div class="gradient-border-inner">
+                        <h3>Gradient Borders</h3>
+                        <p>Eye-catching gradient borders that make elements pop.</p>
+                        <span class="badge">Popular</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials scroll-reveal">
+        <div class="container">
+            <h2>What People Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="quote">"The design is absolutely stunning! The animations are smooth and the overall user experience is top-notch."</p>
+                    <div class="author">
+                        <div class="avatar">JS</div>
+                        <div class="author-info">
+                            <p class="name">John Smith</p>
+                            <p class="role">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="quote">"I love the modern aesthetic and how everything flows seamlessly. Great attention to detail!"</p>
+                    <div class="author">
+                        <div class="avatar">SK</div>
+                        <div class="author-info">
+                            <p class="name">Sarah Kim</p>
+                            <p class="role">Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="quote">"The hover effects and transitions make the site feel alive. Truly impressive work!"</p>
+                    <div class="author">
+                        <div class="avatar">MJ</div>
+                        <div class="author-info">
+                            <p class="name">Mike Johnson</p>
+                            <p class="role">Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter scroll-reveal">
+        <div class="container newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest updates and design tips</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About EarnWeb</h4>
+                    <p>Your ultimate resource for earning money online with modern design and powerful features.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📷</a>
+                        <a href="#">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EarnWeb. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Dark Mode Toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        }
+
+        // Search Toggle
+        function toggleSearch() {
+            document.getElementById('searchBar').classList.toggle('active');
+        }
+
+        // Perform Search
+        function performSearch() {
+            const query = document.getElementById('searchInput').value;
+            alert('Searching for: ' + query);
+        }
+
+        // Load Dark Mode Preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+    <script src="animations.js"></script>
+    <script src="advanced-animations.js"></script>
+</body>
+</html>

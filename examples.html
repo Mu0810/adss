@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Examples - EarnWeb</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="advanced-styles.css">
+    <style>
+        .example-section {
+            padding: 60px 20px;
+            margin: 40px 0;
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            background: var(--light-bg);
+        }
+        
+        .example-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .example-code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .example-demo {
+            margin: 20px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        body.dark-mode .example-demo {
+            background: #2a2a2a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">💰 EarnWeb</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="demo.html">Demo</a></li>
+                <li><a href="examples.html" class="active">Examples</a></li>
+            </ul>
+            <div class="navbar-icons">
+                <button class="search-toggle" onclick="toggleSearch()">🔍</button>
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="scroll-reveal">Animation Examples</h1>
+            <p class="scroll-reveal">Copy-paste ready code snippets</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Example 1: Text Reveal -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">1️⃣ Text Reveal Animation</h2>
+            <p>Characters appear one by one with typing effect</p>
+            
+            <div class="example-demo">
+                <h3 data-text-reveal>This text reveals character by character!</h3>
+            </div>
+            
+            <div class="example-code">
+&lt;h3 data-text-reveal&gt;Your text here&lt;/h3&gt;
+
+// Automatically triggered on scroll into view
+// No additional JavaScript needed!
+            </div>
+        </div>
+
+        <!-- Example 2: Parallax -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">2️⃣ Parallax Scrolling</h2>
+            <p>Elements move at different speeds during scroll (speed value: 0.3-1.5)</p>
+            
+            <div class="example-demo">
+                <div data-parallax="0.3" style="font-size: 2rem;">⬇️ Slow (0.3x)</div>
+                <div data-parallax="0.7" style="font-size: 2rem; margin: 20px 0;">⬇️ Medium (0.7x)</div>
+                <div data-parallax="1.2" style="font-size: 2rem;">⬇️ Fast (1.2x)</div>
+            </div>
+            
+            <div class="example-code">
+&lt;div data-parallax="0.3"&gt;Slow motion&lt;/div&gt;
+&lt;div data-parallax="0.7"&gt;Medium speed&lt;/div&gt;
+&lt;div data-parallax="1.2"&gt;Fast speed&lt;/div&gt;
+
+// Value = scroll multiplier
+            </div>
+        </div>
+
+        <!-- Example 3: Magnetic Cursor -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">3️⃣ Magnetic Cursor Effect</h2>
+            <p>Elements follow cursor on hover</p>
+            
+            <div class="example-demo">
+                <button data-magnetic style="padding: 15px 30px; font-size: 1rem; cursor: grab;">
+                    Hover over me! 🧲
+                </button>
+            </div>
+            
+            <div class="example-code">
+&lt;button data-magnetic&gt;I follow your cursor!&lt;/button&gt;
+
+// Works on any element
+// Smooth 0.3 multiplier movement
+            </div>
+        </div>
+
+        <!-- Example 4: Animated Numbers -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">4️⃣ Animated Counters</h2>
+            <p>Numbers count from 0 to target when scrolling into view</p>
+            
+            <div class="example-demo">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                    <div>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--primary-color);">
+                            <span data-animate-number="1000">0</span>+
+                        </div>
+                        <p>Users</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--secondary-color);">
+                            <span data-animate-number="500">0</span>+
+                        </div>
+                        <p>Projects</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--accent-color);">
+                            <span data-animate-number="99">0</span>%
+                        </div>
+                        <p>Success</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="example-code">
+&lt;span data-animate-number="1000"&gt;0&lt;/span&gt;
+
+// Number counts from 0 to 1000 in 2 seconds
+// Triggered on scroll into view
+// Formatted with thousand separators
+            </div>
+        </div>
+
+        <!-- Example 5: Stagger Animation -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">5️⃣ Stagger Animation</h2>
+            <p>Sequential animations with 100ms delay between items</p>
+            
+            <div class="example-demo">
+                <div data-stagger style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                    <div data-stagger-item style="padding: 20px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        Item 1
+                    </div>
+                    <div data-stagger-item style="padding: 20px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        Item 2
+                    </div>
+                    <div data-stagger-item style="padding: 20px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        Item 3
+                    </div>
+                </div>
+            </div>
+            
+            <div class="example-code">
+&lt;div data-stagger&gt;
+    &lt;div data-stagger-item&gt;Item 1&lt;/div&gt;
+    &lt;div data-stagger-item&gt;Item 2&lt;/div&gt;
+    &lt;div data-stagger-item&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;
+
+// Each item delays by 100ms
+            </div>
+        </div>
+
+        <!-- Example 6: Scroll Text Effect -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">6️⃣ Scroll Text Effect</h2>
+            <p>Text slides up and fades in on scroll</p>
+            
+            <div class="example-demo">
+                <p data-scroll-text style="font-size: 1.3rem; font-weight: bold;">
+                    Watch me slide up and fade in! 👀
+                </p>
+            </div>
+            
+            <div class="example-code">
+&lt;p data-scroll-text&gt;Your text here&lt;/p&gt;
+
+// Slides from bottom with fade on scroll into view
+// 0.8 second duration with cubic-bezier easing
+            </div>
+        </div>
+
+        <!-- Example 7: Form Animation -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">7️⃣ Form Input Animation</h2>
+            <p>Interactive form fields with glow effect on focus</p>
+            
+            <div class="example-demo">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Type your message..."></textarea>
+                </div>
+            </div>
+            
+            <div class="example-code">
+&lt;div class="form-group"&gt;
+    &lt;label&gt;Your Label&lt;/label&gt;
+    &lt;input type="text" placeholder="..."&gt;
+&lt;/div&gt;
+
+// Automatic focus animation
+// Border color changes to primary
+// Slight lift effect with glow
+            </div>
+        </div>
+
+        <!-- Example 8: Gradient Text -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">8️⃣ Animated Gradient Text</h2>
+            <p>Gradient flows across text smoothly</p>
+            
+            <div class="example-demo">
+                <h2 class="gradient-animated" style="font-size: 2rem;">
+                    Amazing Gradient Text Animation!
+                </h2>
+            </div>
+            
+            <div class="example-code">
+&lt;h2 class="gradient-animated"&gt;
+    Your text here
+&lt;/h2&gt;
+
+// Gradient flows left to right continuously
+// Customize colors in CSS variables
+            </div>
+        </div>
+
+        <!-- Example 9: Smooth Links -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">9️⃣ Smooth Link Hover</h2>
+            <p>Animated underline grows on hover</p>
+            
+            <div class="example-demo">
+                <a href="#" class="smooth-link" style="font-size: 1.2rem;">
+                    Hover over this link →
+                </a>
+            </div>
+            
+            <div class="example-code">
+&lt;a href="#" class="smooth-link"&gt;
+    Click me
+&lt;/a&gt;
+
+// Underline grows from left to right
+// Cubic-bezier easing for smooth motion
+            </div>
+        </div>
+
+        <!-- Example 10: Animated Border -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">🔟 Animated Border Glow</h2>
+            <p>Border pulses with glowing effect</p>
+            
+            <div class="animated-border example-demo">
+                <h3>Beautiful Glowing Border!</h3>
+                <p>Hover and observe the glow effect</p>
+            </div>
+            
+            <div class="example-code">
+&lt;div class="animated-border"&gt;
+    &lt;h3&gt;Your content&lt;/h3&gt;
+&lt;/div&gt;
+
+// Gradient border with pulse glow
+// 3 second animation loop
+            </div>
+        </div>
+
+        <!-- Example 11: Typing Effect -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">1️⃣1️⃣ Typing Effect</h2>
+            <p>Text appears with typing cursor animation</p>
+            
+            <div class="example-demo">
+                <p class="typing-effect" style="font-size: 1.3rem;">
+                    This text types out with cursor!
+                </p>
+            </div>
+            
+            <div class="example-code">
+&lt;h2 class="typing-effect"&gt;
+    Typing text
+&lt;/h2&gt;
+
+// Creates typing effect with blinking cursor
+// 3 second animation
+            </div>
+        </div>
+
+        <!-- Example 12: Scale on Hover -->
+        <div class="example-section scroll-reveal">
+            <h2 class="example-title">1️⃣2️⃣ Scale on Hover</h2>
+            <p>Elements grow slightly on hover</p>
+            
+            <div class="example-demo">
+                <button class="hover-scale" style="padding: 15px 30px; font-size: 1rem;">
+                    Hover me! 📈
+                </button>
+            </div>
+            
+            <div class="example-code">
+&lt;button class="hover-scale"&gt;
+    Hover me!
+&lt;/button&gt;
+
+// Scales to 1.05x on hover
+// Smooth 0.3s transition
+// Works on any element
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EarnWeb | Animation Examples</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        }
+
+        function toggleSearch() {
+            alert('Search functionality would go here!');
+        }
+
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+    <script src="animations.js"></script>
+    <script src="advanced-animations.js"></script>
+</body>
+</html>
