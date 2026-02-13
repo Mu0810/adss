@@ -751,3 +751,273 @@ body.dark-mode .resource-card:hover {
     padding-top: 2rem;
     text-align: center;
 }
+
+/* Ultra-Modern Motion System */
+:root {
+    --aurora-1: #6ae4ff;
+    --aurora-2: #b86bff;
+    --aurora-3: #ff7ad9;
+    --glow-color: rgba(102, 126, 234, 0.35);
+    --glass-bg: rgba(255, 255, 255, 0.55);
+    --glass-border: rgba(255, 255, 255, 0.35);
+    --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.12);
+    --shadow-float: 0 18px 50px rgba(0, 0, 0, 0.18);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --glass-bg: rgba(26, 26, 26, 0.6);
+        --glass-border: rgba(255, 255, 255, 0.08);
+        --glow-color: rgba(168, 109, 255, 0.35);
+    }
+}
+
+body {
+    background-image:
+        radial-gradient(1200px 400px at -10% -10%, rgba(106, 228, 255, 0.15), transparent 50%),
+        radial-gradient(1000px 500px at 110% -20%, rgba(255, 122, 217, 0.12), transparent 55%);
+    background-attachment: fixed;
+}
+
+/* Scroll reveal baseline */
+body.motion-ready .scroll-reveal,
+body.motion-ready .article-card,
+body.motion-ready .category-card,
+body.motion-ready .testimonial-card,
+body.motion-ready .guide-card,
+body.motion-ready .resource-card,
+body.motion-ready .tool-card,
+body.motion-ready .info-card,
+body.motion-ready .case-study-card,
+body.motion-ready .blog-post,
+body.motion-ready .sidebar-widget {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: transform, opacity;
+}
+
+body.motion-ready .revealed {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Navbar glass + glow */
+.navbar {
+    backdrop-filter: blur(14px);
+}
+
+.navbar.scrolled {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    transform: translateY(0);
+}
+
+/* Hero: animated aurora */
+.hero {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.hero::before,
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: -40% -20% auto -20%;
+    height: 120%;
+    background: radial-gradient(circle at 20% 30%, rgba(106, 228, 255, 0.6), transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(184, 107, 255, 0.45), transparent 55%),
+        radial-gradient(circle at 50% 80%, rgba(255, 122, 217, 0.35), transparent 60%);
+    filter: blur(40px);
+    opacity: 0.7;
+    z-index: -1;
+    animation: auroraShift 16s ease-in-out infinite alternate;
+}
+
+.hero::after {
+    inset: auto -30% -50% -30%;
+    height: 140%;
+    opacity: 0.5;
+    animation-duration: 22s;
+}
+
+.hero h1 {
+    background: linear-gradient(120deg, #ffffff 0%, #d9e7ff 45%, #ffffff 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    animation: shimmerText 6s linear infinite;
+}
+
+.hero p {
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Glass cards with kinetic hover */
+.article-card,
+.guide-card,
+.resource-card,
+.testimonial-card,
+.case-study-card,
+.tool-card,
+.info-card,
+.blog-post,
+.sidebar-widget {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(18px);
+    box-shadow: var(--shadow-soft);
+    position: relative;
+    overflow: hidden;
+}
+
+.article-card::before,
+.guide-card::before,
+.resource-card::before,
+.testimonial-card::before,
+.case-study-card::before,
+.tool-card::before,
+.info-card::before,
+.blog-post::before,
+.sidebar-widget::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.35), transparent 35%, transparent 60%, rgba(255, 255, 255, 0.2));
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
+.article-card:hover,
+.guide-card:hover,
+.resource-card:hover,
+.testimonial-card:hover,
+.case-study-card:hover,
+.tool-card:hover,
+.info-card:hover,
+.blog-post:hover,
+.sidebar-widget:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: var(--shadow-float);
+}
+
+.article-card:hover::before,
+.guide-card:hover::before,
+.resource-card:hover::before,
+.testimonial-card:hover::before,
+.case-study-card:hover::before,
+.tool-card:hover::before,
+.info-card:hover::before,
+.blog-post:hover::before,
+.sidebar-widget:hover::before {
+    opacity: 1;
+}
+
+/* CTA buttons: glow + magnetic pulse */
+.cta-button {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 30px var(--glow-color);
+}
+
+.cta-button::after {
+    content: '';
+    position: absolute;
+    inset: -60% 40% auto -60%;
+    height: 140%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.6), transparent 55%);
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.6s ease;
+    transform: translateY(20px);
+}
+
+.cta-button:hover::after {
+    opacity: 0.8;
+    transform: translateY(-10px);
+}
+
+.cta-button:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* Floating accents */
+.float-animation {
+    animation: floatY 6s ease-in-out infinite;
+}
+
+/* Ambient highlights for section titles */
+.featured-articles h2,
+.section-title,
+.page-title {
+    position: relative;
+}
+
+.featured-articles h2::after,
+.section-title::after,
+.page-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    width: 120px;
+    height: 6px;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--aurora-1), var(--aurora-2), var(--aurora-3));
+    filter: blur(0.3px);
+    animation: auroraGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes auroraShift {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+        transform: translate3d(6%, -4%, 0) scale(1.05);
+    }
+    100% {
+        transform: translate3d(-4%, 6%, 0) scale(1.1);
+    }
+}
+
+@keyframes shimmerText {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes floatY {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes auroraGlow {
+    0% {
+        opacity: 0.6;
+        width: 100px;
+    }
+    100% {
+        opacity: 1;
+        width: 150px;
+    }
+}
+
+/* Motion-safe fallback */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

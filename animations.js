@@ -267,6 +267,7 @@ const addMouseTrailCSS = () => {
 
 // Initialize all animations
 const initAnimations = () => {
+    document.body.classList.add('motion-ready');
     addMouseTrailCSS();
     observeElements();
     smoothScroll();
